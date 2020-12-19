@@ -1,0 +1,43 @@
+
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Constantes -->
+    <!-- Del origien al chassis -->
+    <xacro:property name="ORIGIN_CHASSIS" value="0.0 0.0 0.0" />
+
+    <!-- chassis a left rocker -->
+    <xacro:property name="CHASSIS_LR" value="0.0750 0.2365 0.0685" />
+    <!-- left rocker a left boogie -->
+    <xacro:property name="LR_LB" value="0.1356 0.0080 -0.0904" />
+    <!-- left boogie a wheel 1 -->
+    <xacro:property name="LB_WHEEL_1" value="0.1346 0.0396 -0.0468" />
+    <!-- left boogie a wheel 2 -->
+    <xacro:property name="LB_WHEEL_2" value="-0.1397 0.0396 -0.0280" />
+    <!-- left rocker a wheel 3 -->
+    <xacro:property name="LR_WHEEL_3" value="-0.2776 0.0396 -0.1192" />
+
+    <!-- chassis a right rocker -->
+    <xacro:property name="CHASSIS_RR" value="0.0750 -0.2365 0.0685" />
+    <!-- right rocker a right boogie -->
+    <xacro:property name="RR_RB" value="0.1356 -0.0080 -0.0904" />
+    <!-- right boogie a wheel 4 -->
+    <xacro:property name="RB_WHEEL_4" value="0.1346 -0.0396 -0.0468" />
+    <!-- right boogie a wheel 5 -->
+    <xacro:property name="RB_WHEEL_5" value="-0.1397 -0.0396 -0.0280" />
+    <!-- right rocker a wheel 6 -->
+    <xacro:property name="RR_WHEEL_6" value="-0.2776 -0.0396 -0.1192" />
+
+    <!-- Materials -->
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+    <material name="blue">
+        <color rgba="0.258823529 0.690196078 1 1" />
+    </material>
+    <material name="red">
+        <color rgba="1 0.349019608 0.258823529 1" />
+    </material>
+    <material name="green">
+        <color rgba="0.349019608 1 0.258823529 1" />
+    </material>
+</robot>
